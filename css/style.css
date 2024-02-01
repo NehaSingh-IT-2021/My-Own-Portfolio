@@ -836,7 +836,22 @@ h5.locationName
     {
         display:none;
     }
-
+    .portfolio .pubs-curric 
+    {
+        display: block;
+    }
+    .about .about-content .personal-info .info-item {
+        flex: 0 0 100%;
+        max-width: 100%;
+    }
+    .about .about-content .skills .skill-item {
+        flex: 0 0 100%;
+        max-width: 100%;
+        padding: 15px;
+    }
+    .portfolio .pubs-curric .pubs-container {
+        width: 100%;
+    }
 }
 @media (max-width:767px)
 {

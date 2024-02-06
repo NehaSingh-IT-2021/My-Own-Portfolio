@@ -692,6 +692,10 @@ h5.locationName
     border-radius: 10px;
     overflow: hidden;
 }
+.portfolio .publication-item-inner .publication-date
+{
+    color: var(--text-black-700);
+}
 .portfolio .publication-item-inner a
 {
     color: red;

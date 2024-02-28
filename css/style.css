@@ -422,8 +422,8 @@ h3.my-profession
 }
 .about .about-content .personal-info
 {
-    flex:0 0 53%;
-    max-width: 53%;
+    flex:0 0 100%;
+    max-width: 100%;
     margin-top: 40px;
     margin-right: 15px;
 }
@@ -460,8 +460,8 @@ h3.my-profession
 }
 .about .about-content .skills
 {
-    flex: 0 0 40%;
-    max-width: 40%;
+    flex: 0 0 100%;
+    max-width: 100%;
     margin-top: 40px;
 }
 
@@ -594,6 +594,16 @@ h5.centerName
     text-transform: capitalize;
     color: var(--text-black-900);
 }
+.about .experience .experienceLink
+{
+    color: red;
+    font-weight: bold;
+    transition: all 0.3s ease;
+}
+.about .experience .experienceLink:hover
+{
+    color: var(--text-black-900);
+}
 .about .about-content .timeline .timeline-text
 {
     line-height: 25px;
@@ -706,6 +716,24 @@ h5.locationName
 {
     color: var(--text-black-900);
 }
+.portfolio .publication-item-inner .publicationbtn
+{
+    font-size: 15px;
+    font-weight: 600;
+    padding: 12px;
+    color: white;
+    margin: 5px;
+    border-radius: 40px;
+    display: inline-block;
+    white-space: nowrap;
+    border: none;
+    background: var(--skin-color2);
+    transition: all 0.3s ease;
+}
+.portfolio .publication-item-inner .publicationbtn:hover
+{
+    transform: scale(1);
+}
 .portfolio .publication-item-inner .publication-img img
 {
     width:100%;
@@ -721,6 +749,120 @@ h5.locationName
     display: flex;
     flex: 0 0 50%;
 }.portfolio .pubs-curric .pubs-container
+{
+    width: 50%;
+}
+
+/* Certification */
+.certification .certification-heading
+{
+    flex: 0 0 100%;
+    max-width: 100%;
+    margin-bottom: 40px;
+}
+.certification .certification-heading h2
+{
+    color: var(--text-black-900);
+    font-weight: 500;
+}
+.certification .certification-item
+{
+    flex: 0 0 50%;
+    max-width: 50%;
+    margin-bottom: 30px;
+}
+.certification .certification-item a
+{
+    color: red;
+    font-weight: bold;
+    transition: all 0.3s ease;
+}
+.certification .certification-item a:hover
+{
+    color: var(--text-black-900);
+}
+.certification .certification-item-inner .certificationbtn
+{
+    font-size: 15px;
+    font-weight: 600;
+    padding: 12px;
+    color: white;
+    margin: 5px;
+    border-radius: 40px;
+    display: inline-block;
+    white-space: nowrap;
+    border: none;
+    background: var(--skin-color2);
+    transition: all 0.3s ease;
+}
+.certification .certification-item-inner .certificationbtn:hover
+{
+    transform: scale(1);
+}
+.certification .certification-item-inner
+{
+    border: 6px solid var(--bg-black-100);
+    border-radius: 10px;
+    overflow: hidden;
+}
+.certification .certification-item-inner .certification-img img
+{
+    width:100%;
+    display: block;
+}
+.certification .publication-heading
+{
+    margin-bottom: 20px;
+}
+.certification .publication-heading h2
+{
+    color: var(--text-black-900);
+    font-weight: 500;
+    text-align: left;
+}
+.certification .publication-item
+{
+    display: flex;
+    flex: 0 0 90%;
+    max-width: 90%;
+    margin-bottom: 30px;
+    padding: 5px;
+}
+.certification .publication-item-inner
+{
+    border: 6px solid var(--bg-black-100);
+    border-radius: 10px;
+    overflow: hidden;
+}
+.certification .publication-item-inner .publication-date
+{
+    color: var(--text-black-700);
+}
+.certification .publication-item-inner a
+{
+    color: red;
+    font-weight: bold;
+    transition: all 0.3s ease;
+}
+.certification .publication-item-inner a:hover
+{
+    color: var(--text-black-900);
+}
+.certification .publication-item-inner .publication-img img
+{
+    width:100%;
+    display: flex;
+}
+.certification .pubs-curric
+{
+    max-width: 1100px;
+    width: 100%;
+    margin: auto;
+    padding-top: 60px;
+    padding-bottom: 70px;
+    display: flex;
+    flex: 0 0 50%;
+}.certification .pubs-curric .pubs-container
 {
     width: 50%;
 }
@@ -830,7 +972,8 @@ h5.locationName
         margin-bottom: 150px;
     }
     .contact .contact-info-item,
-    .portfolio .portfolio-item
+    .portfolio .portfolio-item,
+    .certification .certification-item
     {
         flex: 0 0 100%;
         max-width: 100%;
@@ -844,7 +987,8 @@ h5.locationName
     {
         display:none;
     }
-    .portfolio .pubs-curric 
+    .portfolio .pubs-curric,
+    .certification .pubs-curric 
     {
         display: block;
     }
@@ -857,7 +1001,9 @@ h5.locationName
         max-width: 100%;
         padding: 15px;
     }
-    .portfolio .pubs-curric .pubs-container {
+    .portfolio .pubs-curric .pubs-container,
+    .certification .pubs-curric .pubs-container
+    {
         width: 100%;
     }
 }
@@ -866,6 +1012,8 @@ h5.locationName
     .contact .contact-info-item,
     .portfolio .portfolio-item,
     .portfolio .publication-item,
+    .certification .certification-item,
+    .certification .publication-item,
     .about .about-content .experience,
     .about .about-content .education,
     .about .about-content .skills,

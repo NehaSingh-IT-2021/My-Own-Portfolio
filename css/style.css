@@ -89,6 +89,14 @@ ul
 {
     padding-top: 5px;
 }
+.padd-bot-15
+{
+    padding-bottom: 15px;
+}
+.padd-top-10
+{
+    padding-top: 10px;
+}
 .padd-6
 {
     padding-left: 6px;
@@ -639,7 +647,138 @@ h5.locationName
     color: var(--text-black-700);
 }
 
-/*  Portfoio  */
+/*    Experience and Education    */
+.experience .experience-content,
+.education .education-content
+{
+    flex: 0 0 100%;
+    max-width: 100%;
+}
+.experience .experience-content ,
+.education .education-content 
+{
+    flex: 0 0 100%;
+    max-width: 100%;
+}
+.experience .experience-content .experience-card,
+.education .education-content .education-card
+{
+    flex: 0 0 100%;
+    max-width: 100%;
+    margin-top: 30px;
+}
+.experience .experience-content h3.title,
+.education .education-content h3.title
+{
+    font-size: 24px;
+    margin-bottom: 30px;
+    font-weight: 700;
+    color: var(--text-black-900);
+}
+.experience .experience-content .timeline-box,
+.education .education-content .timeline-box
+{
+    flex: 0 0 100%;
+    max-width: 100%;
+}
+.experience .experience-content.timeline,
+.education .education-content.timeline
+{
+    background-color: var(--bg-black-100);
+    padding: 30px 15px;
+    border: 1px solid var(--bg-black-50);
+    border-radius: 10px;
+    width: 100%;
+    position: relative;
+}
+.experience .experience-content .timeline .timeline-item,
+.education .education-content .timeline .timeline-item
+{
+    position: relative;
+    padding-left: 37px;
+    padding-bottom: 50px;
+}
+.experience .experience-content .timeline .timeline-item:last-child,
+.education .education-content .timeline .timeline-item:last-child
+{
+    padding-bottom: 0;
+}
+.experience .experience-content .timeline .timeline-item::before,
+.education .education-content .timeline .timeline-item::before
+{
+    content: '';
+    width: 1px;
+    position: absolute;
+    height: 100%;
+    left: 7px;
+    top: 0;
+    background-color: var(--skin-color);
+}
+.experience .experience-content .timeline .circle-dot,
+.education .education-content .timeline .circle-dot
+{
+    position: absolute;
+    left: 0;
+    top: 0;
+    height: 15px;
+    width: 15px;
+    border-radius: 50%;
+    background-color: var(--skin-color);
+}
+.experience .experience-content .timeline .timeline-date,
+.education .education-content .timeline .timeline-date
+{
+    font-weight: 500;
+    font-size: 17px;
+    margin-bottom: 12px;
+    color: var(--text-black-700);
+}
+.experience .experience-content .timeline .timeline-date .fa,
+.education .education-content .timeline .timeline-date .fa
+{
+    margin-right: 6px;
+}
+.experience .experience-content .timeline .timeline-title,
+.education .education-content .timeline .timeline-title
+{
+    font-weight: 700;
+    font-size: 18px;
+    margin-bottom: 8px;
+    text-transform: capitalize;
+    color: var(--text-black-900);
+}
+.experience .experienceLink,
+.education .experienceLink
+{
+    color: red;
+    font-weight: bold;
+    transition: all 0.3s ease;
+}
+.experience .experienceLink:hover,
+.education .experienceLink:hover
+{
+    color: var(--text-black-900);
+}
+.experience .experience-content .timeline .timeline-text,
+.education .education-content .timeline .timeline-text
+{
+    line-height: 25px;
+    font-size: 17px;
+    text-align: justify;
+    color: var(--text-black-700);
+}
+.experience .experience-content .timeline-item .gapping,
+.education .education-content .timeline-item .gapping
+{
+    margin-bottom: 15px;
+}
+.experience .experience-content .timeline .timeline-item .centerName .fa,
+.education .education-content .timeline .timeline-item .centerName .fa
+{
+    margin-right: 10px;
+}
+
+/*  Portfolio  */
 .portfolio .portfolio-heading
 {
     flex: 0 0 100%;
@@ -741,16 +880,16 @@ h5.locationName
 }
 .portfolio .pubs-curric
 {
-    max-width: 1100px;
+
     width: 100%;
     margin: auto;
     padding-top: 60px;
     padding-bottom: 70px;
     display: flex;
-    flex: 0 0 50%;
+    flex: 0 0 100%;
 }.portfolio .pubs-curric .pubs-container
 {
-    width: 50%;
+    width: 100%;
 }
 
 /* Certification */
@@ -865,6 +1004,61 @@ h5.locationName
 }.certification .pubs-curric .pubs-container
 {
     width: 50%;
+}
+
+/* Extra Album */
+.extraAlbum .extraAlbum-heading
+{
+    margin-bottom: 20px;
+}
+.extraAlbum .extraAlbum-heading h2
+{
+    color: var(--text-black-900);
+    font-weight: 500;
+    text-align: left;
+}
+.extraAlbum .extraAlbum-item
+{
+    display: flex;
+    flex: 0 0 90%;
+    max-width: 90%;
+    margin-bottom: 30px;
+    padding: 5px;
+}
+.extraAlbum .extraAlbum-item-inner
+{
+    border: 6px solid var(--bg-black-100);
+    border-radius: 10px;
+    overflow: hidden;
+}
+.extraAlbum .responsive 
+{
+    display: flex;
+    width: 50%;
+}
+.extraAlbum .gallery-image
+{
+    display: flex;
+    flex: 0 0 50%;
+}
+.extraAlbum .gallery
+{
+    padding: 10px;
+    margin: 10px;
+}
+.extraAlbum .gallery .desc
+{
+    font-size: 20px;
+    width: 100%;
+    padding-top: 15px;
+    text-align: center;
+    font-weight: 600;
+    color: var(--text-black-700);
+}
+.extraAlbum .gallery-image {
+    object-fit: contain;
+    width: 100%;
+    height: auto;
 }
 
 /*   Contact   */
@@ -1021,6 +1215,10 @@ h5.locationName
     {
         flex: 0 0 100%;
         max-width: 100%;
+    }
+    .extraAlbum .responsive 
+    {
+        width: 100%;
     }
     .contact-sub-title
     {

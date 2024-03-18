@@ -1127,6 +1127,11 @@ h5.locationName
     color: var(--text-black-900);
 }
 
+.extraAlbum .gallery-title
+{
+    color: var(--text-black-900);
+}
+
 @media (max-width:1199px)
 {
     .aside{
